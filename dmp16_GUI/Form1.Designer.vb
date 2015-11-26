@@ -31,6 +31,7 @@ Partial Class Form1
         Me.Label3 = New System.Windows.Forms.Label()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.SuspendLayout()
         '
         'TextBox1
@@ -47,7 +48,7 @@ Partial Class Form1
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 2
-        Me.Button1.Text = "찾기"
+        Me.Button1.Text = "찾기(&F)"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button3
@@ -56,7 +57,7 @@ Partial Class Form1
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(75, 23)
         Me.Button3.TabIndex = 4
-        Me.Button3.Text = "종료"
+        Me.Button3.Text = "종료(&C)"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'Label1
@@ -74,17 +75,17 @@ Partial Class Form1
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(75, 23)
         Me.Button4.TabIndex = 7
-        Me.Button4.Text = "덤프"
+        Me.Button4.Text = "덤프(&D)"
         Me.Button4.UseVisualStyleBackColor = True
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(10, 116)
+        Me.Label3.Location = New System.Drawing.Point(10, 119)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(168, 12)
+        Me.Label3.Size = New System.Drawing.Size(190, 12)
         Me.Label3.TabIndex = 8
-        Me.Label3.Text = "dmp16 GUI. ⓒ 2015 Naissoft."
+        Me.Label3.Text = "dmp16 GUI v1.1 ⓒ 2015 Naissoft."
         '
         'OpenFileDialog1
         '
@@ -99,11 +100,22 @@ Partial Class Form1
         Me.Button2.Text = "덤프 내용"
         Me.Button2.UseVisualStyleBackColor = True
         '
+        'LinkLabel1
+        '
+        Me.LinkLabel1.AutoSize = True
+        Me.LinkLabel1.Location = New System.Drawing.Point(10, 101)
+        Me.LinkLabel1.Name = "LinkLabel1"
+        Me.LinkLabel1.Size = New System.Drawing.Size(41, 12)
+        Me.LinkLabel1.TabIndex = 10
+        Me.LinkLabel1.TabStop = True
+        Me.LinkLabel1.Text = "피드백"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(584, 137)
+        Me.Controls.Add(Me.LinkLabel1)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Button4)
@@ -128,5 +140,6 @@ Partial Class Form1
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents OpenFileDialog1 As System.Windows.Forms.OpenFileDialog
     Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents LinkLabel1 As System.Windows.Forms.LinkLabel
 
 End Class
